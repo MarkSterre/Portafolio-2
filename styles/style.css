@@ -1,0 +1,326 @@
+/* PAGE RULES */
+
+  :root {
+    --highlighted-text: #8E7BEF;
+    --button-color: #5D3BEF;
+    --habilities-background: #F9F6FF;
+    --black: #222222;
+    --ligth-black: #423F40;
+    --backgroundPage-color: #FFFFFF;
+    --contact-icons-background: #F9F5F2;
+
+    --desktop-titleSize: 150px;
+    --desktop-subtitleSize: 50px;
+    --desktop-bodyTextSize: 18px;
+
+    --mobile-titleTextSize: 50px;
+    --mobile-subtitleTextSize: 24px;
+    --mobile-subsectionTextSize: 20px;
+    --mobile-bodyTextSize: 16px;
+    --mobile-captionTextSize: 12px;
+  }
+
+  @font-face {
+    font-family: Montserrat-regular;
+    src: url('../fonts/Montserrat-Regular.otf')
+  }
+
+  @font-face {
+    font-family: Montserrat-semibold;
+    src: url('../fonts/Montserrat-SemiBold.otf');
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-size: var(--desktop-bodyTextSize);
+    font-family: Montserrat-regular;
+    background-color: var(--backgroundPage-color);
+  }
+
+  h1 {
+    font-family: Montserrat-semibold;
+    font-size: 75px;
+  }
+
+  h2 {
+    font-family: Montserrat-semibold;
+    font-size: 35px;
+  }
+
+/* NAVIGATION BAR */
+
+.navigation-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 7rem;
+}
+
+.navigation-bar ul {
+  display: flex;
+  padding: 4rem 3rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-bar a {
+  font-size: var(--body-text-desktop);
+  color: var(--othericons-background);
+  padding: 0 2.7rem 0 2rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.navigation-bar a:hover {
+  color: var(--highlighted-text);
+  font-family: Montserrat-semibold;
+}
+
+/* MAIN COVER */
+
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .main-image {
+    width: 66rem;
+    height: 61rem;
+    background-image: url("../Imágenes/Vector.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .main-image img {
+    padding-bottom: 0.8rem;
+  }
+
+  .main-rigthContainer {
+    display: flex;
+    flex-direction: column;
+    width: 38rem;
+    height: 61rem;
+  }
+
+  .main-rigthContainer h1 {
+    margin: 8rem 0 1rem;
+  }
+
+  .main-rigthContainer p {
+    font-size: 23px;
+    color: var(--ligth-black);
+    width: 40rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .main-iconContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .main-iconContainer-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--highlighted-text);
+    height: 5.5rem;
+    width: 5.5rem;
+    border-radius: 50%;
+  }
+
+  .main-rigthContainer button {
+    width: 25rem;
+    height: 4rem;
+    background-color: var(--button-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--backgroundPage-color);
+    font-size: 16px;
+    border: none;
+  }
+
+/* MAIN PAGE */
+
+  /* About Me Section */
+
+    .about-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 4rem;
+      margin-bottom: 5rem;
+    }
+
+    .about-section p {
+      text-align: center;
+      width: 75rem;
+    }
+
+  /* Habilities Section */
+
+    .habilities-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .habilities-section-cardsContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 100rem;
+    }
+
+    .habilities-section-cardsContainer-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: var(--habilities-background);
+      width: 20rem;
+      height: 25rem;
+    }
+
+    .habilities-section-cardsContainer-card-title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+      width: 20rem;
+      margin: 1rem 0 4rem;
+      padding-left: 1rem;
+    }
+
+    .habilities-section-cardsContainer-card h3 {
+      font-family: Montserrat-semibold;
+      font-size: 16px;
+    }
+
+    .habilities-section-cardsContainer-card p {
+      font-size: 12px;
+      width: 18rem;
+    }
+
+  /* Experience Section */
+
+    h4 {
+      font-family: Montserrat-semibold;
+    }
+
+    .experience-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .experience-section-cardsContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .experience-section-cards {
+      display: flex;
+      justify-content: space-between;
+      margin: 3rem;
+      width: 35rem;
+    }
+
+    .experience-section-cards-logoAndText {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .experience-section-cards-text h4, h6, p {
+      margin: 0.5rem;
+    }
+
+    .experience-section-cards-text p {
+      font-size: 10px;
+    }
+
+  /* Briefcase Section */
+
+    .briefcase-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .briefcase-section-imagesContainer {
+      display: flex;
+      flex-flow: wrap;
+      width: 115rem;
+    }
+
+    .briefcase-section-imagesContainer img {
+      margin: 0 2rem 4rem;
+    }
+
+  /* Contact Section */
+
+    .contact-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-section-cardsContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 50rem;
+    }
+
+    .contact-section-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 15rem;
+    }
+
+    .contact-section-card h5 {
+      font-family: Montserrat-semibold;
+    }
+
+    .contact-section-card p {
+      font-size: 13px;
+    }
+
+
+    .contact-section-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--contact-icons-background);
+      height: 15rem;
+      width: 15rem;
+      border-radius: 30%;
+    }
+
+/* FOOTER */
+
+    footer {
+      text-align: center;
+      margin: 9rem 0 4rem;
+      color: var(--highlighted-text);
+    }
+
+
+
+
