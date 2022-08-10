@@ -14,3 +14,4 @@ Gracias
 
 Ah, le voy a dejar el link del primer portafolio que estaba haciendo para que lo revisé tambien, no lo terminé tampoco pero pues, por si acaso.
 
+https://verdant-dieffenbachia-c8f01b.netlify.app/
